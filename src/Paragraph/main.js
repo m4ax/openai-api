@@ -1,8 +1,10 @@
 import React from 'react';
 
-function Paragraph(props) {
+function Paragraph( {props} ) {
 
-    return <p>props</p>
+    console.log(`Paragraph ${props} `)
+
+    return <><p>{props}</p></>
 }
 
 export default Paragraph 

@@ -18,7 +18,7 @@ async function callAPI(state) {
     console.log(`This has been handed down: ${state}`)
 
 
-    
+
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
@@ -30,9 +30,9 @@ async function callAPI(state) {
 
 
     const data = await response.json()
-    // console.log(data);
-    const content = data.choices[0].message
-    console.log(content.content)
+    const content = data.choices[0].message.content
+
+    return content
 };
 
 export default callAPI
