@@ -3,7 +3,7 @@
 
 
 
-const myKey = "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"; 
+const myKey = ""; 
 
 
 
